@@ -1,0 +1,9 @@
+Cuenta de admin:
+
+Usuario: hernan_lubke
+contraseña: 1234
+
+Cuenta cliente
+
+Usuario: juan_castillo
+contraseña: 1234
