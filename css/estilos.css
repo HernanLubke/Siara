@@ -1,0 +1,232 @@
+ /* Estilo para que la imagen ocupe el ancho completo */
+ .contenedor {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el body ocupe al menos toda la altura de la ventana */
+    background-color:rgba(240, 229, 74, 0.795);
+  }
+
+
+#perro {
+    width: 100%;
+    height: 32rem;
+    margin-bottom: 40px;
+}
+.card {
+    text-align: center; /* Alinea el texto de las tarjetas */
+    background-color: rgb(82, 1, 99); /* Color de fondo de la tarjeta */
+    color: white; /* Color del texto */
+    border: none; /* Elimina el borde predeterminado */
+    border-radius: 10px; /* Redondea las esquinas de las tarjetas */
+}
+.card img {
+    border-top-left-radius: 10px; /* Redondea las esquinas superiores de la imagen */
+    border-top-right-radius: 10px; /* Redondea las esquinas superiores de la imagen */
+}
+.text-boton {
+    background-color: #007bff; /* Color del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Elimina el borde del botón */
+    border-radius: 5px; /* Redondea las esquinas del botón */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+.text-boton:hover {
+    background-color: #0056b3; /* Color del botón al pasar el ratón */
+}
+
+
+
+.card-title {
+    color: rgb(242, 245, 242);
+}
+
+.card-text {
+    color: rgb(242, 245, 242);
+}
+
+
+.card-novedades {
+    width: 18%; /* Establece el ancho de cada tarjeta */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Elimina cualquier espacio adicional alrededor de la imagen */  
+    float: left; /* Hace que las tarjetas se alineen una al lado de la otra */
+    margin: 4rem; /* Centra el card-novedades horizontalmente */
+    margin-right: 1px; /* Espacio entre cada tarjeta */
+    border-radius: 8px; /*Bordes redondeados*/
+    text-align: center; /*Alinea el texto */
+    background-color: rgb(82, 1, 99);
+}
+  
+.footer {
+    margin-top: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(97, 2, 134);
+    padding: 20px 0; /* Ajusta el relleno según sea necesario */
+    text-align: center;
+}
+
+
+.Copyright {
+    text-align: center; /*Alinea el texto */
+    background-color: rgb(54, 179, 54);
+}
+
+
+  .cardPerros {
+     width: 15rem; /* Establece el ancho de cada tarjeta */
+     height: auto; /* Mantiene la proporción de la imagen */
+     display: block; /*Elimina cualquier espacio adicional alrededor de la imagen*/
+     float: left; /*Hace que las tarjetas se alineen una al lado de la otra */
+     margin: 6rem; /* Centra el card-novedades horizontalmente */
+     margin-right: 5rem; /*Espacio entre cada tarjeta */
+     border-radius: 8px;/* Bordes redondeados */
+    text-align: center; /*Alinea el texto */
+     background-color: rgb(82, 1, 99);  }
+     
+    .cardPerros,
+    .cardGatos,
+    .card-accesorios {
+        width: calc(33.33% - 20px); /* Ajusta el ancho de cada tarjeta para que haya tres tarjetas por fila con espacio entre ellas */
+        max-width: 15rem; /* Ancho máximo para mantener el tamaño máximo de la tarjeta */
+        height: auto;
+        margin: 1rem; /* Espacio entre las tarjetas */
+        border-radius: 8px;
+        text-align: center;
+        background-color: rgb(82, 1, 99);
+    }
+    
+    @media (max-width: 992px) {
+        .cardPerros,
+        .cardGatos,
+        .card-accesorios {
+            width: calc(50% - 20px); /* Dos tarjetas por fila en dispositivos medianos */
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .cardPerros,
+        .cardGatos,
+        .card-accesorios {
+            width: calc(100% - 20px); /* Una tarjeta por fila en dispositivos pequeños */
+        }
+    }
+    
+
+.cardGatos {
+    width: 15rem; /* Establece el ancho de cada tarjeta */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Cambia el display a inline-block para centrarlas horizontalmente */
+    float: left; /* Hace que las tarjetas se alineen una al lado de la otra */
+    margin: 6rem; /* Ajusta el margen para separar las tarjetas */
+    border-radius: 8px; /* Bordes redondeados */
+    text-align: center; /* Alinea el texto */
+    background-color: rgb(82, 1, 99); /* Color de fondo */
+}
+
+.card-accesorios {
+    width: 15rem; /* Establece el ancho de cada tarjeta */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Cambia el display a inline-block para centrarlas horizontalmente */
+    float: left; /* Hace que las tarjetas se alineen una al lado de la otra */
+    margin: 6rem; /* Ajusta el margen para separar las tarjetas */
+    border-radius: 8px; /* Bordes redondeados */
+    text-align: center; /* Alinea el texto */
+    background-color: rgb(82, 1, 99); /* Color de fondo */
+} 
+
+
+.dropdown-menu {
+    background-color: rgb(82, 1, 99);
+}
+
+.text-boton {
+    background-color: rgb(60, 2, 71); /* Color de fondo */
+    color: rgb(255, 255, 253); /* Color de texto */
+    border-radius: 7px; /* Borde redondeado*/
+}
+
+.carrito-container {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.producto-img {
+    max-width: 80px;
+    height: auto;
+}
+
+.confirmar-pago-body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    padding-top: 20px;
+    margin: 0;
+}
+
+.confirmar-pago-container {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.confirmar-pago-titulo {
+    color: #007bff;
+}
+
+.confirmar-pago-card {
+    border: 1px solid #dee2e6;
+    border-radius: .25rem;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.confirmar-pago-card-header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-bottom: none;
+}
+
+.confirmar-pago-card-body {
+    padding: 20px;
+}
+
+.confirmar-pago-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.confirmar-pago-th, .confirmar-pago-td {
+    border: 1px solid #dee2e6;
+    padding: 8px;
+    text-align: left;
+}
+
+.confirmar-pago-th {
+    background-color: #f7f7f9;
+}
+
+.confirmar-pago-tfoot-th {
+    background-color: #e9ecef;
+}
+
+/* Estilos responsive */
+@media (max-width: 768px) {
+    .confirmar-pago-container {
+        padding: 0 10px;
+    }
+}
